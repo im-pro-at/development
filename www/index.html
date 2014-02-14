@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/jquery.mobile.css">
+<script src="http://debug.build.phonegap.com/target/target-script-min.js#pknoe3lh"></script>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile.js"></script>
+
+<script type="text/javascript">
+//<![CDATA[ 
+
+function resizestaetpage() {
+    $('#startpage [data-role="content"]').css('margin-top',($(window).height() - $('[data-role=header]').height() - $('[data-role=footer]').height() - $('#startpage [data-role="content"]').outerHeight())/2);
+    alert($('#startpage [data-role="content"]').outerHeight());
+}
+$(window).on('pageinit resize',resizestaetpage );
+$(document).on('pageinit',resizestaetpage );
+
+$(function() {
+//Nessassary random scripting  
+  
+  
+  //StartSeite Horizontal Center
+
+
+
+});
+
+
+
+
+
+//]]>  
+</script>
+
+</head>
+<body>
+
+<div data-role="page" id="startpage">
+
+  <div data-role="content" align="center" >
+    <p>Lade Einstellungen</p>
+    <p><img src="css\images\ajax-loader.gif"/> </p>
+  </div>
+
+</div> 
+
+</body>
+</html>
